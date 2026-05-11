@@ -20,7 +20,7 @@ export default function Chat() {
   }, []);
 
   useEffect(() => {
-    let s = io('http://localhost:3000');
+    let s = io('https://instamay-api.onrender.com');
 
     s.on("connect", (socket) => {
       setSocket(s);

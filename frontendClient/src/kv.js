@@ -1,23 +1,23 @@
 //Routes
-export const postLogin = 'http://localhost:3000/api/auth/login';
-export const postSignup = 'http://localhost:3000/api/auth/signup';
-export const postCreateProfile = 'http://localhost:3000/api/user/createprofile';
-export const getMe = 'http://localhost:3000/api/user/me';
-export const postCreateContact = 'http://localhost:3000/api/contact/createcontact';
-export const postGetProfile = 'http://localhost:3000/api/user/getprofile';
-export const postSavePost = 'http://localhost:3000/api/post/savepost';
-export const getFeed = 'http://localhost:3000/api/post/getfeed';
-export const postGetUserPost = 'http://localhost:3000/api/post/userpost';
-export const postIsFollowing = 'http://localhost:3000/api/contact/isfollowing';
-export const postFollow = 'http://localhost:3000/api/contact/follow';
-export const postUnFollow = 'http://localhost:3000/api/contact/unfollow';
-export const postUploadStauts = 'http://localhost:3000/api/status/uploadstatus';
-export const getStauts = 'http://localhost:3000/api/status/getStatus';
-export const getFollowers = 'http://localhost:3000/api/contact/getfollowers';
-export const getNotification = 'http://localhost:3000/api/contact/getnotification';
-export const getContacts = 'http://localhost:3000/api/contact/getcontacts';
-export const postMsg = 'http://localhost:3000/api/msg/savemsg';
-export const getMsg = 'http://localhost:3000/api/msg/getmsg';
+export const postLogin = 'https://instamay-api.onrender.com/api/auth/login';
+export const postSignup = 'https://instamay-api.onrender.com/api/auth/signup';
+export const postCreateProfile = 'https://instamay-api.onrender.com/api/user/createprofile';
+export const getMe = 'https://instamay-api.onrender.com/api/user/me';
+export const postCreateContact = 'https://instamay-api.onrender.com/api/contact/createcontact';
+export const postGetProfile = 'https://instamay-api.onrender.com/api/user/getprofile';
+export const postSavePost = 'https://instamay-api.onrender.com/api/post/savepost';
+export const getFeed = 'https://instamay-api.onrender.com/api/post/getfeed';
+export const postGetUserPost = 'https://instamay-api.onrender.com/api/post/userpost';
+export const postIsFollowing = 'https://instamay-api.onrender.com/api/contact/isfollowing';
+export const postFollow = 'https://instamay-api.onrender.com/api/contact/follow';
+export const postUnFollow = 'https://instamay-api.onrender.com/api/contact/unfollow';
+export const postUploadStauts = 'https://instamay-api.onrender.com/api/status/uploadstatus';
+export const getStauts = 'https://instamay-api.onrender.com/api/status/getStatus';
+export const getFollowers = 'https://instamay-api.onrender.com/api/contact/getfollowers';
+export const getNotification = 'https://instamay-api.onrender.com/api/contact/getnotification';
+export const getContacts = 'https://instamay-api.onrender.com/api/contact/getcontacts';
+export const postMsg = 'https://instamay-api.onrender.com/api/msg/savemsg';
+export const getMsg = 'https://instamay-api.onrender.com/api/msg/getmsg';
 
 // User / auth
 export const TOKEN = localStorage.getItem("TOKEN");
