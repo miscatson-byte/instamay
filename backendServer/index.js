@@ -2,7 +2,11 @@ require('dotenv').config();
 require('./modules/db')();
 const express = require('express');
 const app = express();
-const port = process.env.port || 3000;
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
 const cors = require('cors');
 const socket = require('socket.io');
 
