@@ -1,0 +1,177 @@
+### Signup
+
+POST https://instamay-api.onrender.com/api/auth/signup
+Content-Type: application/json
+
+{
+    "username" : "amitwa233", 
+    "password" : "12345678"
+
+}
+
+### Login
+
+POST https://instamay-api.onrender.com/api/auth/login
+Content-Type: application/json
+
+{
+    "username" : "amithanshu", 
+    "password" : "12345678"
+
+}
+
+### Me
+
+GET https://instamay-api.onrender.com/api/user/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+### Create Profile
+
+POST https://instamay-api.onrender.com/api/user/createprofile
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "username": "amith",
+  "bio": "this is some bio",
+  "dp": "abuffer1232332ldfkd34"
+}
+
+### Get Profile
+
+POST https://instamay-api.onrender.com/api/user/getprofile
+Content-Type: application/json
+
+{
+  "username": "amith"
+}
+
+### Save post
+
+POST https://instamay-api.onrender.com/api/post/savepost
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "username": "amith",
+  "userImg": "kkk",
+  "postImg": "dflkdf",
+  "body": {
+    "title": "this is a title",
+    "body": "this is about the post thas was just saved"
+  }
+}
+
+### get Feed
+
+GET https://instamay-api.onrender.com/api/post/getfeed
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+### user post
+
+POST https://instamay-api.onrender.com/api/post/userpost
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "username": "amith"
+}
+
+### create contact
+
+POST https://instamay-api.onrender.com/api/contact/createcontact
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "username": "amith"
+}
+
+### follow
+
+POST https://instamay-api.onrender.com/api/contact/follow
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "follow": "yumisan"
+}
+
+### is following
+
+POST https://instamay-api.onrender.com/api/contact/isfollowing
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "follow": "yumisan"
+}
+
+### unfollow
+
+POST https://instamay-api.onrender.com/api/contact/unfollow
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "unfollow": "yumisan"
+}
+
+### Save status
+
+POST https://instamay-api.onrender.com/api/status/uploadstatus
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "username": "amith",
+  "userImg": "kkk",
+  "body": "some captions",
+  "statusImg": "dflkdf"
+}
+
+### get Stauts
+
+GET https://instamay-api.onrender.com/api/status/getStatus
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+### get follwers
+
+GET https://instamay-api.onrender.com/api/contact/getfollowers
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+### get Notification
+
+GET https://instamay-api.onrender.com/api/contact/getnotification
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+### get Contacts
+
+GET https://instamay-api.onrender.com/api/contact/getcontacts
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+### Save Message
+
+POST https://instamay-api.onrender.com/api/msg/savemsg
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "to": "amitanshu_sahu",
+  "msg": "hope you are fine, i need a favour"
+}
+
+### Get Message
+
+POST https://instamay-api.onrender.com/api/msg/getmsg
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtaXRoIiwiaWF0IjoxNjg3MzA0NzMzfQ.MGloCJNCk0HCfnByoXy67te7OoptxTCEbyTixIUrSXY
+
+{
+  "to": "yumisan"
+}
